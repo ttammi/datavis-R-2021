@@ -1,5 +1,7 @@
 # Week 1: R Basics
 
+# This is an R script file. Next week, we'll cover .Rmd files.
+
 ########### Running code, assigning values to objects
 
 # You can get output by simply typing into the console, or running (part of) a script file.
@@ -46,7 +48,7 @@ str(age) # shows structure of the vector: type, length, first values
 # Output from functions can also be saved to objects  
 mean_age <- mean(age)
 
-# An object can be printed with text using e.g. the paste() function
+# The value of an object can be printed with text using e.g. the paste() function
 paste("Mean age:", mean_age)
 
 # Concatenate vectors with c(): here, we combine one new element (x) with the age vector
@@ -71,15 +73,16 @@ age[cond]
 
 # Above, cond is a logical vector, i.e. it consists of TRUE/FALSE values only. 
 
-# There are also character (categorical) vectors.
+# There are also character (categorical) vectors. Remember to use quotes!
 firstname <- c("John", "Mark", "Jane", "Alice", "Sophie")
 
 # Print the structure of the vector
 str(firstname)
 
 # Be careful when combining different types of elements
-c(age, firstname)
+combined <- c(age, firstname)
 
+mean(combined[1:5])
 
 ########### From vectors to data frames
 
@@ -88,8 +91,11 @@ c(age, firstname)
 df <- data.frame(age, firstname) # new variable names can be assigned: data.frame(age_mod = age, firstname_mod = firstname)
 str(df)
 
-# print your data frame
+# Print your data frame
 df
+
+# or click on the name in the Environment tab
+
 
 ### Data wrangling: base R vs tidyverse
 # Tidyverse is an alternative library to base R (the traditional style of R code), 
@@ -99,7 +105,7 @@ df
 # however, this course will focus on using tidyverse functions for data wrangling.  
 
 #### Base R
-# Print variable of data frame
+# Access variable of data frame
 df$age
 
 # Make new variable (here, centered age values)  
