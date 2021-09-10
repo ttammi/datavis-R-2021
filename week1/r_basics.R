@@ -114,7 +114,7 @@ df$age_centered <- (df$age - mean(df$age))
 df
 
 # Select variables age and age_centered
-df[c(1,3)] # same as df[, c(1,3)]
+df[c(1,3)] # same as df[ , c(1,3)]
 # what would happen with df[c(1,3),] 
 
 df[c("age", "age_centered")] 
