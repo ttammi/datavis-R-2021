@@ -7,6 +7,7 @@ output:
     toc: true
 ---
 
+
 This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. You can write text freely outside chunks (see the [Reference Guide](https://rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf) for detailed guidance).  
 
 ```{r setup}
