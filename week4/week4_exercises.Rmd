@@ -10,13 +10,13 @@ library(tidyverse)
 
 # Exercise 1
 
-Read the region_scores.csv data (make sure you have the data file in the right folder). 
+Read the region_scores.csv data. 
 
 ```{r}
 
 ```
 
-Create a figure that shows the distributions (density plots or histograms) of **age** and **score** in separate subplots (facets). What do you need to do first?  
+Create a figure that shows the distributions (e.g. density plot, histogram) of **age** and **score** in separate subplots (facets). What do you need to do first?  
 
 In the figure, set individual x-axis limits for age and score by modifying the `scales` parameter within `facet_wrap()`.
 
